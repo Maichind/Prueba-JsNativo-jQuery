@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/functions.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/c409098e01.js" crossorigin="anonymous"></script>
+    <title>WC - Mind!</title>
+</head>
+<body>
+    <div class="wc">
+        <div class="container">
+
+            <!-- navbar -->
+            <div class="navbar">
+                <button class="bar"><i class="fa-solid fa-bars"></i></button>
+                <span><img src="./assets/logo.png" alt=""></span>
+                <button class="salir">
+                    <i class="fa-solid fa-power-off"></i>
+                    <a> Salir</a>
+                </button>
+            </div>
+            <div class="navbar2">
+                <button id="opcion1" class="prep">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <a> Preparación</a> 
+                </button>
+                <button id="opcion2" class="alm">
+                    <i class="fa-solid fa-warehouse"></i>
+                    <a> Almacenamiento</a> 
+                </button>
+                <button id="opcion3" class="venta">
+                    <i class="fa-solid fa-tags"></i>
+                    <a> En venta</a> 
+                </button>
+                <button id="opcion4" class="vendido">
+                    <i class="fa-solid fa-repeat"></i>
+                    <a> Vendidos</a> 
+                </button>
+            </div>
+
+            <!-- data -->
+            <div class="cont-data">
+                
+                <div class="data">
+                    <div class="data-content">
+                        <a>No existen datos para mostrar.</a>
+                    </div>
+                </div>
+
+                <!-- table -->
+                <div class="table">
+                    <section class="table-body">
+                        <table id="tabla">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th>ID<span><i class="fa-solid fa-sort"></i></span></th>
+                                    <th>Placa<span><i class="fa-solid fa-sort"></i></span></th>
+                                    <th>Marca<span><i class="fa-solid fa-sort"></i></span></th>
+                                    <th>Modelo<span><i class="fa-solid fa-sort"></i></span></th>
+                                    <th>Kilometraje<span><i class="fa-solid fa-sort"></i></span></th>
+                                    <th>Transmisión<span><i class="fa-solid fa-sort"></i></span></th>
+                                    <th>Tipo<span><i class="fa-solid fa-sort"></i></span></th>
+                                    <th>Precio de compra<span><i class="fa-solid fa-sort"></i></span></th>
+                                    <th>Proviniencia<span><i class="fa-solid fa-sort"></i></span></th>
+                                    <th>            </th>
+                                </tr>
+                            </thead>
+                            <tbody id="datos">
+                                <!-- datos -->
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+
+                <!-- spinner -->
+                <div id="container-carga">
+                    <div class="spinner">
+                        <a>Cargando...</a>
+                    </div>
+                    <div class="spinner-content">
+                        <div id="carga"></div>
+                        <div class="message">
+                            <a>Cargue Masivo</a><br>
+                            <p>Espera un momento mientras procesamos los datos, esto puede tardar unos minutos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- select -->
+            <div class="select">
+                <button class="search">
+                    <input type="text" placeholder="Busqueda por coincidencia">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <div class="paginator">
+                    <button class="results">
+                        <a>Resultados</a>
+                        <select id="itemsperpage">
+                            <option value="05">5</option>
+                            <option selected value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                        </select>
+                    </button>
+                    <button class="page">
+                        <!-- data page -->
+                    </button>
+                </div>
+                <button id="load" class="load" type="button">Cargue Masivo</button>
+                <div id="loader" class="loader">
+                    <select class="loader-options" name="acciones">
+                        <option selected hidden>Acciones</option>
+                        <option value="nuevo">Nuevo registro</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                        <option value="option4">Option 4</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
