@@ -1,4 +1,4 @@
-#Prueba-JsNativo-jQuery
+# Prueba-JsNativo-jQuery
 
 - Carga de pagina principal vacía  
 - Click en ''Preparación'' segunda carga sin datos.  
